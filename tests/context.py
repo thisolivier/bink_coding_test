@@ -3,4 +3,4 @@ import sys
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from phonemaster import phonemast_leases
+from phonemaster.phonemast_lease_tools import PhonemastLeaseTools

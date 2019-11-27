@@ -1,4 +1,4 @@
-from database_service import PhoneMastHelper
+from phonemaster.database_service import PhoneMastHelper
 
 large_divider = "---------------------------------"
 small_divider = "--------"
