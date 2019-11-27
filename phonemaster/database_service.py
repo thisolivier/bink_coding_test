@@ -38,7 +38,6 @@ class PhoneMastHelper():
 
     @staticmethod
     def rent(csv_row):
-        print(csv_row)
         return float(csv_row[10])
 
     @staticmethod
@@ -66,7 +65,7 @@ def get_masts_iterable():
     return reader
 
 """
-Check we have real data to work with
+Check we have good data to work with
 """
 if _csv_data is None:
     raise("Could not open CSV file")

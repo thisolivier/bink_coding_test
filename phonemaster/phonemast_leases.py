@@ -19,17 +19,25 @@ def lease_length_25_years():
     2) Output the total rent for all items in this list to the console
     """
     masts_with_25_year_lease = [mast for mast in _get_masts_iterable() if PhoneMastHelper.lease_years(mast) == 25]
-    total_rents = 0.0
+    total_rent = 0.0
     for mast in masts_with_25_year_lease:
-        total_rents += PhoneMastHelper.rent(mast)
-    print(total_rents)
-    return (masts_with_25_year_lease, total_rents)
+        total_rent += PhoneMastHelper.rent(mast)
+    print(total_rent)
+    return (masts_with_25_year_lease, total_rent)
 
 def masts_count_per_tenant():
     """ Requirements
     1) Output the dictionary to the console in a readable form
     """
-    pass
+    tenants = {}
+    for mast in _get_masts_iterable():
+        tenant = PhoneMastHelper.tenant_name(mast)
+        if tenant in tenants:
+            tenants[tenant] += 1
+        else:
+            tenants[tenant] = 1
+    print(tenants)
+    return tenants
 
 def lease_start_date_1june1999_to_31aug2007():
     """ Requirements
@@ -38,4 +46,4 @@ def lease_start_date_1june1999_to_31aug2007():
     pass
 
 if __name__ == '__main__':
-    lease_length_25_years()
+    lease_start_date_1june1999_to_31aug2007()
