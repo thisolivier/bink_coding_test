@@ -25,4 +25,4 @@
 1. Open terminal and navigate to the root of this project
 2. Enter `python tests/phonemast_leases_tests.py`
 
-## *Thanks very much for the challenge, if not an interview then I'd love a code review, Olivier*
+## *Thanks very much for the challenge, I'd love a code review, Olivier*

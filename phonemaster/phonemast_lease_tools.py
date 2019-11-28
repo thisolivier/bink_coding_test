@@ -17,6 +17,7 @@ class PhonemastLeaseTools:
         if self._print_results:
             description = "The first five items in list of masts sorted by rent"
             view_rent_ascending(description, masts_sorted_by_rent)
+            return
 
         return masts_sorted_by_rent
 
@@ -33,6 +34,7 @@ class PhonemastLeaseTools:
         if self._print_results:
             description = "All phone masts with 25 year leases, and their total rent"
             view_lease_lengths_with_total(description, masts_with_25_year_lease, total_rent)
+            return
 
         return (masts_with_25_year_lease, total_rent)
 
@@ -51,6 +53,7 @@ class PhonemastLeaseTools:
         if self._print_results:
             description = "Tenants names and the number of masts they lease"
             view_mast_count_dict(description, tenants_dict)
+            return
 
         return tenants_dict
 
@@ -69,6 +72,7 @@ class PhonemastLeaseTools:
         if self._print_results:
             description = "Masts with a lease starting between 01/06/1999 and 31/07/2007"
             view_masts_in_date_range(description, masts_in_range)
+            return
 
         return masts_in_range
 
