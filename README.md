@@ -6,7 +6,7 @@
 ## Installing
 *Unless specified, all futher commands should be typed into your terminal*
 1. Ensure you're running Python 3.5 or higher by entering `python --version`
-2. This project only relies on standard Python libraries, there's nothing else to install
+2. This project only relies on Python standard libraries, there's nothing else to install
 
 ## Query stores from the terminal
 *Unless specified, all futher commands should be typed into your terminal*
