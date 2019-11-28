@@ -16,7 +16,7 @@ def view_rent_ascending(description, iterable_masts):
         print("[%s] %s || %s" %tuple_rent_name_tenant)
 
     _print_header(description)
-    print("- Format will be: [Rent] - Mast Location || Tenant")
+    print("- Format will be: [Rent] Mast Location || Tenant")
     print(small_divider)
     [pretty_print_masts(mast) for mast in iterable_masts]
     print(large_divider)
@@ -44,12 +44,12 @@ def view_mast_count_dict(description, tenant_name_count_dict):
 def view_masts_in_date_range(description, iterable_masts):
     def pretty_print_masts(mast):
         date = PhoneMastHelper.lease_start_date(mast)
-        formatted_date = date.strftime("%d %m %Y")
+        formatted_date = date.strftime("%d/%m/%Y")
         date_mast_tenant_tuple = (formatted_date, PhoneMastHelper.property_name(mast), PhoneMastHelper.tenant_name(mast))
         print("[%s] %s || %s" %date_mast_tenant_tuple)
 
     _print_header(description)
-    print("- Format will be: [date] - Mast location || Tenant")
+    print("- Format will be: [date] Mast location || Tenant")
     print(small_divider)
     [pretty_print_masts(mast) for mast in iterable_masts]
     print(large_divider)
